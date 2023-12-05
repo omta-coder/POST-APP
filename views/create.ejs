@@ -1,0 +1,26 @@
+<%- include("header")%>
+<%- include("nav")%>
+
+<div id="form">
+
+    <form action="/create-post" method="post">
+        <h1>Create</h1>
+        <br><br>
+        <input type="url" name="image" placeholder="ProfileImage">
+        <br><br>
+        <input type="text" name="name" placeholder="UserName">
+        <br><br>
+        <input type="text" name="title" placeholder="Title">
+        <br><br>
+        <input type="text" name="subtitle" placeholder="Subtitle">
+        <br><br>
+        <input type="text" name="posttitle" placeholder="PostTitle">
+        <br><br>
+        <input type="url" name="url" placeholder="PostImage">
+        <br><br>
+        <button>Submit</button>
+    </form>
+</div>
+
+
+<%- include("footer")%>

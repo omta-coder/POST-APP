@@ -1,0 +1,40 @@
+<%- include("header")%>
+<%- include("nav")%>
+
+<div id="read">
+    <!--<h1>Read</h1>-->
+ <% post.forEach(function(post,index){%>
+   <div id="nav">
+      <img class="one" height="200" src="<%=post.image%>" alt="">
+      <div id="nav-prt2">
+         <h1><%= post.name%></h1>
+         <h5><%= post.title%></h5>
+         <h5><%= post.subtitle%></h5>
+         
+      </div>
+   </div>
+    <hr>
+    <br>
+    <img height="200" width="280" src="<%= post.url%>" alt="">
+    <br><br>
+    <div id="btn">
+      <div id="left">
+         <h5><%= post.posttitle%></h5>
+         <h4>❤:<%= post.like%></h4>
+      </div>
+      <div id="right">
+         <br><br>
+         <a href="/like/<%= index%>">like❤</a>
+      &nbsp;&nbsp;<br>
+      <a href="/delete/<%= index%>">Delete</a>
+      &nbsp;&nbsp;
+      <a href="/update/<%= index%>">Update</a>
+      </div>
+    </div>
+
+    
+ <%})%>
+
+</div>
+
+<%- include("footer")%>

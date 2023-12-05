@@ -1,0 +1,23 @@
+<%- include("header")%>
+<%- include("nav")%>
+
+<form action="/update/<%= index%>" method="post">
+    <h1>Update</h1>
+    <br>
+    <input value="<%= post.image%>" type="url" name="image" placeholder="ProfileImage">
+    <br>
+    <input value="<%= post.name%>" type="text" name="name" placeholder="UserName">
+    <br>
+    <input value="<%= post.title%>" type="text" name="title" placeholder="Title">
+    <br>
+    <input value="<%= post.subtitle%>" type="text" name="subtitle" placeholder="Subtitle">
+    <br>
+    <input value="<%= post.posttitle%>" type="text" name="posttitle" placeholder="PostTitle">
+    <br>
+    <input value="<%= post.url%>" type="url" name="url" placeholder="url">
+    <br>
+    <button>Update</button>
+</form>
+
+
+<%- include("footer")%>
